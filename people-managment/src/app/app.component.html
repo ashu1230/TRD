@@ -1,0 +1,56 @@
+<!-- Main HTML file for the AppComponent -->
+
+<main class="main">
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a routerLink="/people-list" routerLinkActive="active">People List</a></li>
+      <li><a routerLink="/edit-person/1" routerLinkActive="active">Edit Person</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content area -->
+  <div class="content">
+    <!-- Placeholder for loading components based on routes -->
+    <router-outlet></router-outlet>
+  </div>
+</main>
+
+<!-- Optional styles -->
+<style>
+  /* Basic styling for the application */
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  .navbar ul li a.active {
+    font-weight: bold;
+  }
+
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+</style>

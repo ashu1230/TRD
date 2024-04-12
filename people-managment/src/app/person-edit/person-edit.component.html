@@ -1,0 +1,15 @@
+<div>
+    <h2>Edit Person</h2>
+    <form (ngSubmit)="savePerson()">
+      <div>
+        <label for="name">Name:</label>
+        <input [(ngModel)]="person.name" name="name" required>
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input [(ngModel)]="person.age" name="age" type="number" required>
+      </div>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+  
